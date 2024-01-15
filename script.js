@@ -7,7 +7,7 @@ function hello_world_func(text){
   	}
   });
   console.log("Started")
-  request.open("GET", "https://jsonplaceholder.typicode.com/todos/1/");
+  request.open("GET", "https://actual-immune-cub.ngrok-free.app/website");
   request.send();
   
 }
