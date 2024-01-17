@@ -21,9 +21,20 @@
     </div>
     <div class="chat-input">
       <input type="text" id="user-input" placeholder="Type a message...">
-      <button onclick="hello_world_func()">Send</button>
+      <button onclick="displayInput()">Send</button>
     </div>
   </div>
+
+   <script>
+    // Function to display user input
+    function displayInput() {
+      // Get the value from the input box
+      var userInput = document.getElementById("user-input").value;
+
+      // Display the user input in the output box
+      document.getElementById("chat-output").innerHTML = "User Input: " + userInput;
+    }
+  </script>
 
   <script src="script.js"></script>
 </body>
