@@ -1,3 +1,6 @@
+Access-Control-Allow-Origin: *
+
+
 function hello_world_func(text){
   //const request = new XMLHttpRequest();
   //suppose to get user input from input box and display it
