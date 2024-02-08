@@ -3,92 +3,85 @@
 
 body {
 	font-family: 'Georgia', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-	margin: 0;
 	background-color: #fcfbfc;
 	background-image: url("codeimg2.gif");
 }
 
 header {
 	border: thin solid black;
-	 background-color: #333;
- 	 padding: 10px;
-  	text-align: center;
-  	color: white;
 }
 
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
+	border: 3px solid #fff0f5;
+	background-color: # ffccff;
 }
 
 nav ul li {
-	display: inline;
- 	margin-right: 20px;
+	float: left;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
+nav ul li a {
+	display: block;
+	color: #666;
+	text-align: center;
+	padding: 14px 16px
+	text-decoration: none;
+	border: 1px solid #fff0f5;
+}
+
+nav ul li a:hover:not(.active) {
+	background-color: #ff00ff;
+}
+
+nav ul ki a.active {
+	color: white;
+	background-color: #4CAF50;
 }
 
 .chat-container {
   max-width: 800px;
-  margin: 20px auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Initial transparent background */
+  margin: 0 auto;
+  border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
-  border: 1px solid #ccc;
- /*  border-radius: 5px; */
- /*  overflow: hidden; */
 }
 
 .chat-output {
   height: 500px;
-  padding: 10px;
-  padding: 10px;
-  max-height: 500px;
   overflow-y: scroll;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* Initial transparent background */
+  padding: 10px;
+  background-color: #ffffff;
 }
 
 .chat-input {
-	padding: 10x;
-   	display: flex; 
-	background-color: rgba(0, 0, 0, 0.5); /* Initial transparent background */
-  	border-top: 1px solid #ccc;
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
 }
 
 .chat-input input[type="text"] {
-   flex: 1;
- 
+  flex: 1;
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  margin-right: 10px; 
-  width: 80%;
-  padding: 8px;
+  margin-right: 10px;
 }
 
 .chat-input button {
-  
-  
-  cursor: pointer;
   padding: 8px 15px;
   border: none;
-  border-radius: 5px;
-  background-color: #4CAF50;
-  color: white;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
   cursor: pointer;
 }
 
 .chat-input button:hover {
-  background-color: #45a049;
+  background-color: #0056b3;
 }
 
-/* Change background to opaque on hover */
-.chat-container:hover,
-.chat-input:hover,
-.chat-output:hover {
-  background-color: rgba(0, 0, 0, 1); /* Full opacity when hovered */
-}
+
