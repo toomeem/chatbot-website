@@ -1,15 +1,18 @@
-function hello_world_func(text){
-  const request = new XMLHttpRequest();
-  
-  request.addEventListener("readystatechange", () => {
-  	if(request.readyState === 4){
-  		console.log(request.responseText)
-  	}
-  });
- 
-  console.log("Started")
-  request.open("GET", "https://actual-immune-cub.ngrok-free.app/website");
-  request.send();
+const inputBox = document.getElementById('inputBox');
+const outputBox = document.getElementById('outputBox');
 
-  
-}
+inputBox.addEventListener('mouseenter', () => {
+  inputBox.classList.remove('transparent');
+});
+
+inputBox.addEventListener('mouseleave', () => {
+  inputBox.classList.add('transparent');
+});
+
+outputBox.addEventListener('mouseenter', () => {
+  outputBox.classList.remove('transparent');
+});
+
+outputBox.addEventListener('mouseleave', () => {
+  outputBox.classList.add('transparent');
+});
