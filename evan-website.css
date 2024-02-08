@@ -48,6 +48,7 @@ nav ul ki a.active {
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
+  position: relative; /* new line */
 }
 
 .chat-output {
@@ -55,12 +56,21 @@ nav ul ki a.active {
   overflow-y: scroll;
   padding: 10px;
   background-color: white;
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* new line */
+  position: absolute; /* new line */
 }
 
 .chat-input {
   display: flex;
   padding: 10px;
   background-color: #fff;
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* new line */
+  position: absolute; /* new line */
+}
+
+.transparent { /* new code */
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 0.5;
 }
 
 .chat-input input[type="text"] {
