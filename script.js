@@ -1,5 +1,5 @@
-const inputBox = document.getElementById('inputBox');
-const outputBox = document.getElementById('outputBox');
+const input = document.getElementById('user-input');
+const output = document.getElementById('outputBox');
 
 inputBox.addEventListener('mouseenter', () => {
   inputBox.classList.remove('transparent');
