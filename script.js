@@ -1,18 +1,18 @@
-const input = document.getElementById('user-input');
-const output = document.getElementById('outputBox');
+const inputB = document.getElementById('user-input');
+const outputB = document.getElementById('chat-output');
 
-inputBox.addEventListener('mouseenter', () => {
-  inputBox.classList.remove('transparent');
+inputB.addEventListener('mouseenter', () => {
+  inputB.classList.remove('transparent');
 });
 
-inputBox.addEventListener('mouseleave', () => {
-  inputBox.classList.add('transparent');
+inputB.addEventListener('mouseleave', () => {
+  inputB.classList.add('transparent');
 });
 
-outputBox.addEventListener('mouseenter', () => {
-  outputBox.classList.remove('transparent');
+outputB.addEventListener('mouseenter', () => {
+  outputB.classList.remove('transparent');
 });
 
-outputBox.addEventListener('mouseleave', () => {
-  outputBox.classList.add('transparent');
+outputB.addEventListener('mouseleave', () => {
+  outputB.classList.add('transparent');
 });
